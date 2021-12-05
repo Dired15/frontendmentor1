@@ -1,0 +1,197 @@
+
+
+
+html
+{
+    height:100%;
+    font-size:15px;
+    box-sizing: border-box;
+}
+
+body
+{
+   
+    background-color:hsl(233, 47%, 7%);
+    color:white;
+    display:flex;
+    justify-content:center;
+    
+    height:100%;
+    
+}
+
+body *
+{
+    padding:0px;
+    margin:0px;
+    font-weight:normal;
+    font-style:normal;
+}
+
+#main
+{
+    
+    background-color:hsl(244, 38%, 16%);
+    display:flex;
+    
+    width:70%;
+    height:50%;
+    border-radius:15px;
+    
+    
+}
+
+#genericImage
+{
+    order:2;
+   
+    height:100%;
+    width:50%;
+    background-image:url("../assets/images/image-header-mobile.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+
+
+}
+
+#vail
+{
+    width:100%;
+    height:100%;
+    background-color:hsla(277, 64%, 61%,0.3);
+
+}
+
+#information
+{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    padding:5%;
+
+}
+
+#information h1
+{
+    font-weight:bold;
+    text-align:left;
+    width:100%;
+    font-size:2.0rem;
+   
+
+}
+
+#information em
+{
+    font-weight:bold;
+    color:hsl(277, 64%, 61%);
+}
+
+#information p
+{
+    font-size:1.3rem;
+    line-height: 1.7rem;
+    text-align:left;
+    color:hsla(0, 0%, 100%, 0.75);
+    width:100%;
+
+
+}
+
+#stat
+{
+    
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+}
+
+ 
+
+.statCard h2
+{
+    margin:auto;
+    text-align:left;
+    color:hsla(0, 0%, 100%, 0.6);
+    margin-bottom:3%;
+
+}
+
+.starCard span
+{
+    margin:auto;
+    text-align:center;
+    color:hsla(0, 0%, 100%, 0.75);
+}
+
+
+@media screen and (max-width:500px)
+{
+    #main
+    {
+    max-width:calc(0.9*375px);
+    min-height:calc(0.9*812px);
+    background-color:hsl(244, 38%, 16%);
+    display:flex;
+    flex-direction:column;
+    width:90%;
+    height:90%;
+    border-radius:15px;
+    
+    
+    }
+
+    #genericImage
+    {
+    
+    border-top-left-radius: 13px;
+    border-top-right-radius:13px ;
+    height:30%;
+    width:100%;
+    order:0;
+    
+    }
+
+    #stat
+    {
+    height:40%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+    }
+
+    #information
+    {
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    padding:10%;
+
+    }
+
+    #stat
+    {
+    height:40%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+    }
+
+    .starCard
+    {
+     width:100%;
+    }
+
+    
+
+}
